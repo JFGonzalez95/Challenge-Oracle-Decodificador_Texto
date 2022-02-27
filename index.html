@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="titulo">Encriptador de Texto</h1>
+  <style>
+    body{
+      background-color: #050550;
+    }
+    .titulo{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color: white;
+    }
+    .titulo2{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      text-align: center;
+    }
+    .info{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      padding: 0 0.5rem;
+      color:white;
+      position: relative;
+      top: 0px;
+
+    }
+
+    .btn{
+      background-color:#444343;
+      border: none;
+      color: #ffffff;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor:pointer;
+      border-radius: 12px;
+      transition: .3s ease all;
+      position: relative;
+      top: 10px;
+      left: 26px;
+    }
+
+    .btn:hover{
+      background-color: #B2B0B0;
+    }
+
+    .text-input{
+      background-color:#050550 ;
+      padding: 200px 80px;
+      font-size: 20px;
+      text-align: center;
+      border: 2px solid;
+      border-color: white;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      position: relative;
+      top: 11px;
+    }
+    .form{
+      background-color:#050550 ;
+      border-style:hidden;
+      position: relative;
+      top: 20px;
+    }
+    .msg{
+      background-color:#050550 ;
+      position: relative;
+      top: 20px;
+    }
+  </style>
+
+  <main class="main">
+    <section class="form box">
+      <form action="">
+        <label class ="info" for="input-texto">!Solo letras minúsculas, No numeros, sin acentos ¡</label>
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui .....">
+        <input class="btn" type="submit" value="Encriptar!" id="btn-encriptar">
+        <input class="btn" type="submit" value="Desencriptar!" id="btn-desencriptar">
+      </form>
+    </section>
+  
+    <section class="msg box">
+      <h2 class="titulo2" id="">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="msg"></input>
+      <input class="btn" type="submit" value="copiar" id="btn-copy">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src ="EncriptarVocales.js"></script>
+  <script src= "remover_Comas.js"></script>
+  <script src="elimAcentos_ConvMinus.js"></script>
+  <script src ="Validacion_Numeros.js"></script>
+  <script src ="text_Encriptado.js"></script>
+  <script src = "copyText_Encrip.js"></script>
+  <script src = "ProcesEncriptado.js"></script>
+  <script src = "validacionesEncrip.js"></script>
+  <script src = "ProcesDesencriptado.js"></script>
+</body>
+</html>
